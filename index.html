@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mail Details - ප්‍රාදේශීය සභාව - හබරාදූව</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="assets/img/slfavicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="login-page" id="mainBody">
+    <!-- Login Page -->
+    <div class="login-container" id="loginContainer">
+        <div class="login-box">
+            <h2>Admin Login</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Dashboard -->
+    <div class="dashboard hidden" id="dashboard">
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <img src="https://via.placeholder.com/50" alt="Logo" class="logo">
+                <span class="brand-name">AdminPanel</span>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="sidebar-menu">
+                <li class="active" data-page="dashboard">
+                    <i class="fas fa-home"></i>
+                    <span>Dashboard</span>
+                </li>
+                <li data-page="analytics">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Analytics</span>
+                </li>
+                <li data-page="users">
+                    <i class="fas fa-users"></i>
+                    <span>Users</span>
+                </li>
+                <li data-page="products">
+                    <i class="fas fa-box"></i>
+                    <span>Products</span>
+                </li>
+                <li data-page="settings">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="header-right">
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="profile-dropdown">
+                        <img src="https://via.placeholder.com/40" alt="Profile" class="profile-img">
+                        <div class="dropdown-content">
+                            <a href="#"><i class="fas fa-user"></i> Profile</a>
+                            <a href="#"><i class="fas fa-cog"></i> Settings</a>
+                            <a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Dashboard Page -->
+                <div class="page active" id="dashboardPage">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <i class="fas fa-users"></i>
+                            <div class="stat-info">
+                                <h3>Total Users</h3>
+                                <p>1,234</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-shopping-cart"></i>
+                            <div class="stat-info">
+                                <h3>Total Sales</h3>
+                                <p>$45,678</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-chart-line"></i>
+                            <div class="stat-info">
+                                <h3>Revenue</h3>
+                                <p>$98,765</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <i class="fas fa-ticket-alt"></i>
+                            <div class="stat-info">
+                                <h3>Tickets</h3>
+                                <p>56</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="charts-grid">
+                        <div class="chart-container">
+                            <canvas id="salesChart"></canvas>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="usersChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Users Page -->
+                <div class="page" id="usersPage">
+                    <div class="table-container">
+                        <div class="table-header">
+                            <h2>Users List</h2>
+                            <button class="add-btn"><i class="fas fa-plus"></i> Add User</button>
+                        </div>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Role</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="usersTableBody">
+                                <!-- Filled by JavaScript -->
+                            </tbody>
+                        </table>
+                        <div class="pagination">
+                            <button class="pagination-btn" disabled><i class="fas fa-chevron-left"></i></button>
+                            <span>Page 1 of 5</span>
+                            <button class="pagination-btn"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Products Page -->
+                <div class="page" id="productsPage">
+                    <div class="products-grid">
+                        <!-- Product cards will be added here by JavaScript -->
+                    </div>
+                </div>
+
+                <!-- Settings Page -->
+                <div class="page" id="settingsPage">
+                    <div class="settings-container">
+                        <h2>Settings</h2>
+                        <form class="settings-form">
+                            <div class="form-group">
+                                <label>Site Title</label>
+                                <input type="text" value="Admin Dashboard">
+                            </div>
+                            <div class="form-group">
+                                <label>Theme</label>
+                                <select>
+                                    <option>Light</option>
+                                    <option>Dark</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Notifications</label>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            <button type="submit" class="save-btn">Save Changes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>&copy; 2024 Admin Dashboard. All rights reserved.</p>
+            </footer>
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
