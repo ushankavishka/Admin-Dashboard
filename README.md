@@ -20,4 +20,4 @@ A **modern and responsive** admin dashboard displaying key metrics such as **mon
 ## 🎯 How to Use  
 1️⃣ **Clone the Repository**  
 ```bash
-git clone https://github.com/ushankavishka/admin-dashboard.git
+git clone https://github.com/username/admin-dashboard.git
