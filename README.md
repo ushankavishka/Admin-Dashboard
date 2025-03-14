@@ -10,7 +10,7 @@ A **modern and responsive** admin dashboard displaying key metrics such as **mon
 
 ## 🛠️ Tech Stack  
 - **Frontend:** HTML, CSS, JavaScript  
-- **Libraries Used:** (If you used any, list them here, e.g., Chart.js)  
+- **Libraries Used:** 
 
 ## 📸 Screenshots  
 | Dashboard |
@@ -20,4 +20,4 @@ A **modern and responsive** admin dashboard displaying key metrics such as **mon
 ## 🎯 How to Use  
 1️⃣ **Clone the Repository**  
 ```bash
-git clone https://github.com/ushankavishka/admin-dashboard.git
+git clone https://github.com/username/admin-dashboard.git
