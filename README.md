@@ -15,7 +15,7 @@ A **modern and responsive** admin dashboard displaying key metrics such as **mon
 ## 📸 Screenshots  
 | Dashboard | Login Page |
 |-----------|------------|
-| ![Dashboard](screenshots/dashboard.png) | ![Login Page](screenshots/login.png) |
+| ![Dashboard](screenshots/image.png) | ![Login Page](screenshots/login.png) |
 
 ## 🎯 How to Use  
 1️⃣ **Clone the Repository**  
