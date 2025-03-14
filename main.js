@@ -1,27 +1,32 @@
 // DOM Elements
-const loginForm = document.getElementById('loginForm');
-const loginContainer = document.getElementById('loginContainer');
-const dashboard = document.getElementById('dashboard');
+// const loginForm = document.getElementById('loginForm');
+// const loginContainer = document.getElementById('loginContainer');
+// const dashboard = document.getElementById('dashboard');
 const sidebar = document.getElementById('sidebar');
 const hamburger = document.getElementById('hamburger');
 const logoutBtn = document.getElementById('logoutBtn');
-const mainBody = document.getElementById('mainBody');
+// const mainBody = document.getElementById('mainBody');
+
 
 // Login Handler
-loginForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    loginContainer.classList.add('hidden');
-    dashboard.classList.remove('hidden');
-    mainBody.classList.remove('login-page');
-    initializeDashboard();
-});
+// loginForm.addEventListener('submit', (e) => {
+//     // e.preventDefault();
+//     window.location.href = 'index.html';
+//     // loginContainer.classList.add('hidden');
+//     // dashboard.classList.remove('hidden');
+//     // mainBody.classList.remove('login-page');
+//     // initializeDashboard();
+// });
+
+initializeDashboard();
 
 // Logout Handler
-logoutBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    dashboard.classList.add('hidden');
-    loginContainer.classList.remove('hidden');
-    mainBody.classList.add('login-page');
+logoutBtn.addEventListener('click', () => {
+    // e.preventDefault();
+    window.location.href = 'login.html';
+    // dashboard.classList.add('hidden');
+    // loginContainer.classList.remove('hidden');
+    // mainBody.classList.add('login-page');
 });
 
 // Sidebar Toggle
