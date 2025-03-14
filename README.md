@@ -10,7 +10,7 @@ A **modern and responsive** admin dashboard displaying key metrics such as **mon
 
 ## 🛠️ Tech Stack  
 - **Frontend:** HTML, CSS, JavaScript  
-- **Libraries Used:** (If you used any, list them here, e.g., Chart.js)  
+- **Libraries Used:** 
 
 ## 📸 Screenshots  
 | Dashboard |
