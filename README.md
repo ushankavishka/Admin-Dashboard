@@ -13,11 +13,11 @@ A **modern and responsive** admin dashboard displaying key metrics such as **mon
 - **Libraries Used:** (If you used any, list them here, e.g., Chart.js)  
 
 ## 📸 Screenshots  
-| Dashboard | Login Page |
-|-----------|------------|
+| Dashboard |
+|-----------|
 | ![Dashboard](screenshots/image.png) |
 
 ## 🎯 How to Use  
 1️⃣ **Clone the Repository**  
 ```bash
-git clone https://github.com/yourusername/admin-dashboard.git
+git clone https://github.com/ushankavishka/admin-dashboard.git
